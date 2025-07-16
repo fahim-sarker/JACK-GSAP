@@ -27,7 +27,6 @@ function App() {
           <HeroSection />
           <MessageSection />
           <FlavourSection />
-          <FlavourSection />
         </div>
       </div>
     </main>

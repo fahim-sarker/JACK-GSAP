@@ -23,9 +23,13 @@ const NavBar = () => {
   return (
     <nav className="py-5 fixed top-0 left-0 w-full z-20 bg-[#000] bg-opacity-80 backdrop-blur-md">
       <div className="container mx-auto px-5 flex items-center justify-between">
-        <h1 className="bmw-logo-text" ref={navref}>
+        <h1
+          className="bmw-logo-text text-4xl font-bold bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
+          ref={navref}
+        >
           BMW
         </h1>
+
 
         <ul
           className="flex gap-x-32 text-white text-lg font-medium tracking-wide"

@@ -56,23 +56,23 @@ const MessageSection = () => {
 
 
   return (
-    <section className="message-content">
+    <section className="message-content bg-[#000]">
       <div className="container mx-auto flex-center py-28 relative">
         <div className="w-full h-full">
           <div className="msg-wrapper">
-            <h1 className="first-message">Stir up your fearless past and</h1>
+            <h1 className="first-message">Ignite your passion for</h1>
 
             <div
-              style={{ clipPath: " polygon(0 0, 0 1%, 0 86%, 0% 100%)"}}
+              style={{ clipPath: " polygon(0 0, 0 1%, 0 86%, 0% 100%)" }}
               className="msg-text-scroll"
             >
               <div className="bg-light-brown md:pb-5 pb-3 px-5">
-                <h2 className="text-red-brown">Fuel Up</h2>
+                <h2 className="text-red-brown">Pure Performance</h2>
               </div>
             </div>
 
             <h1 className="second-message">
-              your future with every gulp of Perfect Protein
+              and drive with BMW precision
             </h1>
           </div>
         </div>

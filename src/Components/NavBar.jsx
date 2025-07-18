@@ -1,40 +1,52 @@
-import React, {  useRef } from 'react'
+import React, { useRef, useEffect } from 'react';
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 const NavBar = () => {
-
   const navref = useRef();
+  const linksRef = useRef();
 
-  useGSAP(() => {
-    gsap.fromTo(
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power2.out", duration: 1.2 } });
+
+    tl.fromTo(
       navref.current,
-      {
-        x: -300,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.5,
-        ease: "power2.out",
-
-      }
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1 }
+    ).fromTo(
+      linksRef.current,
+      { y: -20, opacity: 0 },
+      { y: 0, opacity: 1 },
+      "-=0.8"
     );
   }, []);
 
   return (
-    <nav className='py-5 fixed top-0 left-0 w-full z-20'>
-      <div className="container mx-auto">
-        <h1
-          className="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
-          ref={navref}
-        >
-          JACK DANIELS
+    <nav className="py-5 fixed top-0 left-0 w-full z-20 bg-[#000] bg-opacity-80 backdrop-blur-md">
+      <div className="container mx-auto px-5 flex items-center justify-between">
+        <h1 className="bmw-logo-text" ref={navref}>
+          BMW
         </h1>
+
+        <ul
+          className="flex gap-x-32 text-white text-lg font-medium tracking-wide"
+          ref={linksRef}
+        >
+          <li className="hover:text-blue-400 transition duration-300 cursor-pointer">
+            Home
+          </li>
+          <li className="hover:text-blue-400 transition duration-300 cursor-pointer">
+            Models
+          </li>
+          <li className="hover:text-blue-400 transition duration-300 cursor-pointer">
+            Gallery
+          </li>
+          <li className="hover:text-blue-400 transition duration-300 cursor-pointer">
+            Contact
+          </li>
+        </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

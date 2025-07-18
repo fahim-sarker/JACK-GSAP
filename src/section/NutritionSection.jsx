@@ -7,9 +7,8 @@ import { SplitText } from "gsap/all";
 import gsap from "gsap";
 
 const NutritionSection = () => {
-
-
   const [lists, setLists] = useState(nutrientLists);
+  
 
   useGSAP(() => {
     const titleSplit = SplitText.create(".nutrition-title", {
@@ -35,7 +34,7 @@ const NutritionSection = () => {
     });
     tl.from(paraSplit.words, {
       opacity: 0,
-      y: 200,
+      y: 100,
       stagger: 0.05,
       ease: "power2.out",
       duration: "0.6"
@@ -64,7 +63,7 @@ const NutritionSection = () => {
         className="w-full h-full object-cover object-center absolute top-0 left-0 z-0"
       />
 
-      <div className="flex md:flex-row flex-col justify-between md:px-10 px-5 mt-14 md:mt-0">
+      <div className="flex md:flex-row flex-col justify-between items-center md:px-10 px-5 mt-14 md:mt-0">
         <div className="relative inline-block md:translate-y-20">
           <div className="general-title relative flex flex-col justify-center items-center gap-24">
             <div className="overflow-hidden place-self-start">
@@ -76,8 +75,8 @@ const NutritionSection = () => {
               }}
               className="nutrition-text-scroll place-self-start"
             >
-              <div className="bg-yellow-brown pb-5 md:pt-0 pt-3 md:px-5 px-3">
-                <h2 className="text-milk-yellow">Body Good</h2>
+              <div className="bg-gradient-to-r from-black to-red-600 pb-5 md:pt-0 pt-3 md:px-5 px-3">
+                <h2 className="text-white">Body Good</h2>
               </div>
             </div>
           </div>

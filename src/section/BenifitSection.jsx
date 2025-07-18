@@ -55,28 +55,28 @@ const BenifitSection = () => {
             <ClipPath
               title={"TwinPower Turbo Engines"}
               color={"#faeade"}
-              bg={"#c88e64"}
+              bg={"#A78BFA"}
               className={"first-title"}
               borderColor={"#222123"}
             />
             <ClipPath
               title={"Intelligent xDrive System"}
               color={"#222123"}
-              bg={"#faeade"}
+              bg={"#06B6D4"}
               className={"second-title"}
               borderColor={"#222123"}
             />
             <ClipPath
               title={"Luxury Interior Craftsmanship"}
               color={"#faeade"}
-              bg={"#7F3B2D"}
+              bg={"#F97316"}
               className={"third-title"}
               borderColor={"#222123"}
             />
             <ClipPath
               title={"Next-Gen iDrive Technology"}
               color={"#2E2D2F"}
-              bg={"#FED775"}
+              bg={"#FB7185"}
               className={"fourth-title"}
               borderColor={"#222123"}
             />

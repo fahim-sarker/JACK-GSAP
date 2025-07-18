@@ -81,7 +81,8 @@ const HeroSection = () => {
             Experience the future of luxury and innovation with BMW’s latest generation — where design meets engineering.
           </h2>
 
-          <div className="hero-button flair--3b bg-gradient-to-r from-blue-500 via-white to-blue-800 cursor-pointer">
+          <div className="hero-button flair--3b bg-gradient-to-r from-black to-red-600
+ cursor-pointer text-white">
             <p>Explore Models</p>
           </div>
         </div>

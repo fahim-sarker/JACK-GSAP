@@ -29,3 +29,15 @@ const ClipPath = ({ title, color, bg, className, borderColor }) => {
 };
 
 export default ClipPath;
+
+
+
+
+
+
+
+
+
+
+
+

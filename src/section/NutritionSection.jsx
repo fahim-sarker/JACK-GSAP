@@ -39,6 +39,7 @@ const NutritionSection = () => {
       ease: "power2.out",
       duration: "0.6"
     });
+    
     const scrolltl = gsap.timeline({
       scrollTrigger: {
         trigger: ".nutrition-section",

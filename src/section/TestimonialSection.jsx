@@ -1,21 +1,14 @@
-import React from "react";
+import { useRef } from "react";
 import { cards } from "../constants";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import React from "react";
 
 const TestimonialSection = () => {
-
-  const handlePlay = (index) => {
-    const video = vdRef.current[index];
-    video.play();
-  };
-
-  const handlePause = (index) => {
-    const video = vdRef.current[index];
-    video.pause();
-  };
+  const vdRef = useRef([]);
 
   return (
-    <section className="testimonials-section bg-[#000]">
+    <section className="testimonials-section">
       <div className="absolute size-full flex flex-col items-center pt-[5vw]">
         <h1 className="text-black first-title">What's</h1>
         <h1 className="text-light-brown sec-title">Everyone</h1>
@@ -31,7 +24,7 @@ const TestimonialSection = () => {
             onMouseLeave={() => handlePause(index)}
           >
             <video
-              // ref={(el) => (vdRef.current[index] = el)}
+              ref={(el) => (vdRef.current[index] = el)}
               src={card.src}
               playsInline
               muted

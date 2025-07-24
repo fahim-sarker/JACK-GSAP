@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { cards } from "../constants";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import React from "react";
+
+
 
 const TestimonialSection = () => {
   const vdRef = useRef([]);

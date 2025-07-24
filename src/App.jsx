@@ -50,7 +50,6 @@ function App() {
             <BenifitSection />
             <TestimonialSection />
           </div>
-
           <FooterSection />
         </div>
       </div>

@@ -10,7 +10,8 @@ import FlavourSection from "./section/FlavourSection";
 import NutritionSection from "./section/NutritionSection";
 import BenifitSection from "./section/BenifitSection";
 import TestimonialSection from "./section/TestimonialSection";
-;
+import FooterSection from "./section/FooterSection";
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -50,7 +51,7 @@ function App() {
             <TestimonialSection />
           </div>
 
-          {/* <FooterSection /> */}
+          <FooterSection />
         </div>
       </div>
     </main>

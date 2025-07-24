@@ -6,52 +6,60 @@ const nutrientLists = [
   { label: "Fuel Efficiency", amount: "30 mpg" },
 ];
 
-const cards = [
+import herovideo10 from "../assets/herovideo10.mp4";
+import heroBg from "../assets/herovideo10.mp4";
+import slide1 from "../assets/slide1.jpg";
+import slide2 from "../assets/slide2.jpg";
+import slide3 from "../assets/slide3.jpg";
+import slide4 from "../assets/slide4.jpg";
+import slide5 from "../assets/slide5.jpg";
+
+ const cards = [
   {
-    src: "/videos/f1.mp4",
+    src: herovideo10,
     rotation: "rotate-z-[-10deg]",
     name: "Madison",
-    img: "/images/p1.png",
+    img: slide1,
     translation: "translate-y-[-5%]",
   },
   {
-    src: "/videos/f2.mp4",
+    src: heroBg,
     rotation: "rotate-z-[4deg]",
     name: "Alexander",
-    img: "/images/p2.png",
+    img: slide2,
   },
   {
-    src: "/videos/f3.mp4",
+    src: heroBg,
     rotation: "rotate-z-[-4deg]",
     name: "Andrew",
-    img: "/images/p3.png",
+    img: slide3,
     translation: "translate-y-[-5%]",
   },
   {
-    src: "/videos/f4.mp4",
+    src: heroBg,
     rotation: "rotate-z-[4deg]",
     name: "Bryan",
-    img: "/images/p4.png",
+    img: slide4,
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f5.mp4",
+    src: heroBg,
     rotation: "rotate-z-[-10deg]",
     name: "Chris",
-    img: "/images/p5.png",
+    img: slide5,
   },
   {
-    src: "/videos/f6.mp4",
+    src: heroBg,
     rotation: "rotate-z-[4deg]",
     name: "Devante",
-    img: "/images/p6.png",
+    img: slide3,
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f7.mp4",
+    src: heroBg,
     rotation: "rotate-z-[-3deg]",
     name: "Melisa",
-    img: "/images/p7.png",
+    img: slide1,
     translation: "translate-y-[10%]",
   },
 ];

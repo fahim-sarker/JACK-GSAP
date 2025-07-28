@@ -68,7 +68,6 @@ const FooterSection = () => {
   return (
     <footer ref={footerRef} className="bg-[#000] py-20 overflow-hidden">
       <div className="container mx-auto">
-        {/* Language Links */}
         <ul className="flex gap-x-10 text-white font-medium">
           {["English", "Italiano", "Deutsch", "Français", "Español", "日本語"].map((lang, i) => (
             <li key={i} className="hover:text-gray-300 duration-300 ease-in-out cursor-pointer text-[22px]">
@@ -77,7 +76,6 @@ const FooterSection = () => {
           ))}
         </ul>
 
-        {/* Footer Columns */}
         <div className="pt-32 flex gap-x-20 justify-between flex-wrap">
           <div ref={col1Ref}>
             <h3 className="text-white font-medium text-[25px] pb-2 border-b border-gray-300">Quick Links</h3>

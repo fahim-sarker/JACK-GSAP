@@ -35,8 +35,6 @@ body {
   -ms-overflow-style: none; /* IE 10+ */
 }
 
-
-
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
@@ -75,8 +73,7 @@ body::-webkit-scrollbar {
         @apply rotate-[-3deg] mb-8 border-[.5vw] border-milk;
 
         .hero-subtitle {
-          @apply bg-gradient-to-r from-black to-red-600
-
+          @apply bg-gradient-to-r from-black to-red-600;
         }
 
         h1 {
@@ -238,7 +235,10 @@ body::-webkit-scrollbar {
       @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-72 bottom-[50vh];
 
       .vd-card {
-        @apply md:w-96 w-80 h-[300px] flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-red;
+        @apply md:w-96 w-80 h-[500px] rounded-2xl flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute;
+        border-width: 0.5vw;
+        border-style: solid;
+        border-image: linear-gradient(to right, black, red) 1;
       }
     }
 

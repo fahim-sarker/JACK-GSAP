@@ -45,7 +45,6 @@ function App() {
           <MessageSection />
           <FlavourSection />
           <NutritionSection />
-
           <div>
             <BenifitSection />
             <TestimonialSection />
@@ -53,6 +52,7 @@ function App() {
           <FooterSection />
         </div>
       </div>
+
     </main>
   )
 }

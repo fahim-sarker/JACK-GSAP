@@ -31,6 +31,7 @@ const RootLayout = () => {
       effects: true,
     });
   });
+  
   return (
     <>
       <NavBar />

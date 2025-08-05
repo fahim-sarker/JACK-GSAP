@@ -3,6 +3,7 @@ import Herobg1 from "../assets/herovideo10.mp4"
 import { useGSAP } from '@gsap/react'
 import { Draggable, InertiaPlugin, SplitText } from 'gsap/all'
 import gsap from 'gsap'
+
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
 const HeroSection = () => {
@@ -44,7 +45,7 @@ const HeroSection = () => {
     herotl.to(".hero-container", {
       rotate: 7,
       yPercent: 30,
-      // scale: 0.09,
+      scale: 0.09,
       ease: "power1.inOut"
     })
     Draggable.create(".flair--3b", {

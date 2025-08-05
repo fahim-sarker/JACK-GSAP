@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 
 
@@ -12,7 +13,6 @@ const NavBar = () => {
   const overlayRef = useRef();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Initial animation for logo + desktop links
   useGSAP(() => {
     gsap.fromTo(
       navRef.current,
@@ -26,10 +26,9 @@ const NavBar = () => {
     );
   }, []);
 
-  // Slide-in menu animation on open/close
   useGSAP(() => {
     if (menuOpen) {
-      gsap.set(menuRef.current, { x: "100%" }); // force offscreen
+      gsap.set(menuRef.current, { x: "100%" }); 
       gsap.to(overlayRef.current, {
         autoAlpha: 1,
         duration: 0.3,
@@ -58,7 +57,7 @@ const NavBar = () => {
     }
   }, [menuOpen]);
 
-  // Click outside to close
+
   useGSAP(() => {
     const handleOutsideClick = (e) => {
       if (
@@ -76,7 +75,7 @@ const NavBar = () => {
 
   return (
     <nav className="py-5 fixed top-0 left-0 w-full z-50 bg-[#000] bg-opacity-80 backdrop-blur-md">
-      <div className="container mx-auto px-5 flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between">
         <h1
           ref={navRef}
           className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
@@ -89,9 +88,14 @@ const NavBar = () => {
           ref={linksRef}
           className="hidden md:flex gap-x-32 text-white text-base md:text-lg font-medium tracking-wide"
         >
-          {["Home", "Models", "Gallery", "Contact"].map((item, i) => (
+          {[
+            { name: "Home", path: "/" },
+            { name: "Models", path: "/models" },
+            { name: "Gallery", path: "/gallery" },
+            { name: "Contact", path: "/contact" },
+          ].map((item, i) => (
             <li key={i} className="hover:text-blue-400 transition duration-300 cursor-pointer">
-              {item}
+              <Link to={item.path}>{item.name}</Link>
             </li>
           ))}
         </ul>

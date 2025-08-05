@@ -38,20 +38,8 @@ function App() {
   });
   return (
     <main>
-      <NavBar />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <HeroSection />
-          <MessageSection />
-          <FlavourSection />
-          <NutritionSection />
-          <div>
-            <BenifitSection />
-            <TestimonialSection />
-          </div>
-          <FooterSection />
-        </div>
-      </div>
+  
+     
 
     </main>
   )
